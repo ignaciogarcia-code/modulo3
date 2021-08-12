@@ -13,7 +13,7 @@ mongoose.connect(process.env.DB_CONNECTION,{useNewUrlParser: true, useUnifiedTop
 
 //ROUTES IMPORTS
 const postsRoute = require('./routes/posts');
-app.use('/Usuarios', postsRoute);
+app.use('/', postsRoute);
 
 //SERVER & PORT CONFIG
 const PORT = 3000;
